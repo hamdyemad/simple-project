@@ -8,13 +8,18 @@ import { TaskService } from 'src/app/services/task.service';
 })
 export class HomeComponent implements OnInit {
 
-  constructor(private taskService: TaskService) { }
+  taskServ
+
+  constructor(private taskService: TaskService) {
+
+    this.taskServ = this.taskService;
+  }
 
   ngOnInit() {
   }
 
   delete(i) {
-    this.taskService.delete(i);
+    this.taskServ.delete(i);
   }
 
 }
