@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="forms">
+    <div class="form-group">
+      <input [(ngModel)]="task.name" class="form-control" type="text" placeholder="name">
+    </div>
+    <div class="form-group">
+      <input [(ngModel)]="task.description" #desc class="form-control" type="text" placeholder="description">
+    </div>
+    <button class="btn btn-success" (click)="editTask()">Edit Task</button>
+    <button class="btn btn-danger" (click)="deleteTask()">Delete</button>
+    <button class="btn btn-danger" routerLink="">Cancel</button>
+  </div>
+</div>

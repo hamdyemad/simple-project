@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="forms">
+    <div class="form-group">
+      <input #name class="form-control" type="text" placeholder="name">
+    </div>
+    <div class="form-group">
+      <input #desc class="form-control" type="text" placeholder="description">
+    </div>
+    <button class="btn btn-success" (click)="addTask(name, desc)">Add Task</button>
+    <button class="btn btn-danger" routerLink="">Cancel</button>
+  </div>
+</div>
